@@ -1,7 +1,7 @@
 (() => {
 var exports = {};
 exports.id = 17;
-exports.ids = [17,695];
+exports.ids = [17];
 exports.modules = {
 
 /***/ 6699:
@@ -69,9 +69,9 @@ var jsx_runtime_ = __webpack_require__(997);
 var Layout = __webpack_require__(6490);
 // EXTERNAL MODULE: external "next/router"
 var router_ = __webpack_require__(1853);
-// EXTERNAL MODULE: external "next/Link"
-var Link_ = __webpack_require__(514);
-var Link_default = /*#__PURE__*/__webpack_require__.n(Link_);
+// EXTERNAL MODULE: ./node_modules/next/link.js
+var next_link = __webpack_require__(1664);
+var link_default = /*#__PURE__*/__webpack_require__.n(next_link);
 // EXTERNAL MODULE: external "react-icons/fa"
 var fa_ = __webpack_require__(6290);
 // EXTERNAL MODULE: ./styles/DashboardEvent.module.css
@@ -88,14 +88,14 @@ function DashboardEvent({ evt , handleDelete  }) {
         className: (DashboardEvent_module_default()).event,
         children: [
             /*#__PURE__*/ jsx_runtime_.jsx("h4", {
-                children: /*#__PURE__*/ jsx_runtime_.jsx((Link_default()), {
+                children: /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
                     href: `/events/${evt.attributes.slug}`,
                     children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
                         children: evt.attributes.name
                     })
                 })
             }),
-            /*#__PURE__*/ jsx_runtime_.jsx((Link_default()), {
+            /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
                 href: `/events/edit/${evt.id}`,
                 children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("a", {
                     className: (DashboardEvent_module_default()).edit,
@@ -131,12 +131,9 @@ var config = __webpack_require__(1645);
 // EXTERNAL MODULE: ./styles/Dashboard.module.css
 var Dashboard_module = __webpack_require__(6699);
 var Dashboard_module_default = /*#__PURE__*/__webpack_require__.n(Dashboard_module);
-// EXTERNAL MODULE: ./pages/events/index.js + 1 modules
-var events = __webpack_require__(4893);
 // EXTERNAL MODULE: ./helpers/index.js + 1 modules
 var helpers = __webpack_require__(9751);
 ;// CONCATENATED MODULE: ./pages/account/dashboard.js
-
 
 
 
@@ -224,35 +221,123 @@ async function getServerSideProps({ req  }) {
 
 /***/ }),
 
-/***/ 514:
+/***/ 2796:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/Link");
+module.exports = require("next/dist/shared/lib/head-manager-context.js");
 
 /***/ }),
 
-/***/ 4957:
+/***/ 4014:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/head.js");
+module.exports = require("next/dist/shared/lib/i18n/normalize-locale-path.js");
 
 /***/ }),
 
-/***/ 744:
+/***/ 8524:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/image-config-context.js");
+module.exports = require("next/dist/shared/lib/is-plain-object.js");
 
 /***/ }),
 
-/***/ 5843:
+/***/ 8020:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/image-config.js");
+module.exports = require("next/dist/shared/lib/mitt.js");
+
+/***/ }),
+
+/***/ 4406:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/page-path/denormalize-page-path.js");
+
+/***/ }),
+
+/***/ 4964:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router-context.js");
+
+/***/ }),
+
+/***/ 3938:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router/utils/format-url.js");
+
+/***/ }),
+
+/***/ 9565:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router/utils/get-asset-path-from-route.js");
+
+/***/ }),
+
+/***/ 4365:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router/utils/get-middleware-regex.js");
+
+/***/ }),
+
+/***/ 1428:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router/utils/is-dynamic.js");
+
+/***/ }),
+
+/***/ 1292:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router/utils/parse-relative-url.js");
+
+/***/ }),
+
+/***/ 979:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router/utils/querystring.js");
+
+/***/ }),
+
+/***/ 6052:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router/utils/resolve-rewrites.js");
+
+/***/ }),
+
+/***/ 4226:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router/utils/route-matcher.js");
+
+/***/ }),
+
+/***/ 5052:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router/utils/route-regex.js");
 
 /***/ }),
 
@@ -319,7 +404,7 @@ module.exports = require("react/jsx-runtime");
 var __webpack_require__ = require("../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [686,675,642,490,662,893], () => (__webpack_exec__(9962)));
+var __webpack_exports__ = __webpack_require__.X(0, [505,664,642,490], () => (__webpack_exec__(9962)));
 module.exports = __webpack_exports__;
 
 })();

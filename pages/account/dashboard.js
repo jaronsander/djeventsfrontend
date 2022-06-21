@@ -3,7 +3,6 @@ import { useRouter } from "next/router"
 import DashboardEvent from "@/components/DashboardEvent"
 import { API_URL, NEXT_URL } from "@/config/index"
 import styles from '@/styles/Dashboard.module.css'
-import EventsPage from "pages/events"
 import { parseCookies } from "@/helpers/index"
 const qs = require('qs')
 

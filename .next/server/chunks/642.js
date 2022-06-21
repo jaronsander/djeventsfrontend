@@ -10,7 +10,7 @@ exports.modules = {
 /* harmony export */   "G": () => (/* binding */ NEXT_URL),
 /* harmony export */   "T": () => (/* binding */ API_URL)
 /* harmony export */ });
-const API_URL = "https://boiling-inlet-63943.herokuapp.com/api" || 0;
+const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://0.0.0.0:1337/api";
 const NEXT_URL = process.env.NEXT_PUBLIC_FRONTEND_URL || "http://localhost:3000";
 
 

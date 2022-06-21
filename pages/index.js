@@ -1,6 +1,6 @@
 
 const qs = require('qs')
-import Link from 'next/Link'
+import Link from 'next/link'
 import Layout from '@/components/Layout'
 import Eventitem from '@/components/Eventitem'
 import { API_URL } from '@/config/index'

@@ -1,5 +1,4 @@
 const qs = require('qs')
-import Link from 'next/Link'
 import Layout from '@/components/Layout'
 import Eventitem from '@/components/Eventitem'
 import Pagination from '@/components/Pagination'

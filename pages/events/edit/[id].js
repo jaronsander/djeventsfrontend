@@ -6,7 +6,7 @@ import { useState } from 'react'
 import { useRouter } from 'next/router'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import Link from 'next/Link'
+import Link from 'next/link'
 import Layout from '@/components/Layout'
 import Modal from '@/components/Modal'
 import ImageUpload from '@/components/ImageUpload'

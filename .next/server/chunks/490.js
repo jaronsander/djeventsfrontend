@@ -79,9 +79,9 @@ var router_ = __webpack_require__(1853);
 var fa_ = __webpack_require__(6290);
 // EXTERNAL MODULE: external "react"
 var external_react_ = __webpack_require__(6689);
-// EXTERNAL MODULE: external "next/Link"
-var Link_ = __webpack_require__(514);
-var Link_default = /*#__PURE__*/__webpack_require__.n(Link_);
+// EXTERNAL MODULE: ./node_modules/next/link.js
+var next_link = __webpack_require__(1664);
+var link_default = /*#__PURE__*/__webpack_require__.n(next_link);
 // EXTERNAL MODULE: ./styles/Search.module.css
 var Search_module = __webpack_require__(2046);
 var Search_module_default = /*#__PURE__*/__webpack_require__.n(Search_module);
@@ -134,7 +134,7 @@ function Header() {
         children: [
             /*#__PURE__*/ jsx_runtime_.jsx("div", {
                 className: (Header_module_default()).logo,
-                children: /*#__PURE__*/ jsx_runtime_.jsx((Link_default()), {
+                children: /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
                     href: "/",
                     children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
                         children: "DJ Events"
@@ -146,7 +146,7 @@ function Header() {
                 children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("ul", {
                     children: [
                         /*#__PURE__*/ jsx_runtime_.jsx("li", {
-                            children: /*#__PURE__*/ jsx_runtime_.jsx((Link_default()), {
+                            children: /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
                                 href: "/events",
                                 children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
                                     children: "Events"
@@ -157,7 +157,7 @@ function Header() {
                         /*#__PURE__*/ (0,jsx_runtime_.jsxs)(jsx_runtime_.Fragment, {
                             children: [
                                 /*#__PURE__*/ jsx_runtime_.jsx("li", {
-                                    children: /*#__PURE__*/ jsx_runtime_.jsx((Link_default()), {
+                                    children: /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
                                         href: "/events/add",
                                         children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
                                             children: "Add Event"
@@ -165,7 +165,7 @@ function Header() {
                                     })
                                 }),
                                 /*#__PURE__*/ jsx_runtime_.jsx("li", {
-                                    children: /*#__PURE__*/ jsx_runtime_.jsx((Link_default()), {
+                                    children: /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
                                         href: "/account/dashboard",
                                         children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
                                             children: "Dashboard"
@@ -186,7 +186,7 @@ function Header() {
                             ]
                         }) : // if logged out
                         /*#__PURE__*/ jsx_runtime_.jsx("li", {
-                            children: /*#__PURE__*/ jsx_runtime_.jsx((Link_default()), {
+                            children: /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
                                 href: "/account/login",
                                 children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("a", {
                                     className: "btn-secondary btn-icon",
@@ -220,7 +220,7 @@ function Footer() {
                 children: "Copywright \xa9 DJ Events 2022"
             }),
             /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                children: /*#__PURE__*/ jsx_runtime_.jsx((Link_default()), {
+                children: /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
                     href: "/about",
                     children: "About This Project"
                 })
